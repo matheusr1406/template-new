@@ -29,3 +29,10 @@ app.get("/", (req, res) => {
 
 // Exporta o app para que a Vercel possa usá-lo
 module.exports = app;
+
+// Configuração de porta para o Vercel
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
