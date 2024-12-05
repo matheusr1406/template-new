@@ -12,8 +12,11 @@ app.use(express.json());
 
 // Conexão com o MongoDB
 mongoose.connect(process.env.MONGODB_URI, {
+<<<<<<< HEAD
   useNewUrlParser: true,
   useUnifiedTopology: true,
+=======
+>>>>>>> cd20ccf (a)
 })
   .then(() => console.log("Conectado ao MongoDB!"))
   .catch((error) => {
